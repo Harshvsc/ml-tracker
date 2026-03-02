@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>180-Day ML Engineer Prep Tracker</title>
+    <meta name="description" content="Execution-driven 180-Day Machine Learning Engineer Job Preparation Tracker.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ML ENGINEER <span>180-DAY TRACKER</span></h1>
+            <p class="subtitle">Execution-Driven Preparation | Zero Fluff</p>
+        </header>
+
+        <section id="dashboard" class="dashboard">
+            <div class="card progress-card">
+                <h3>TOTAL PROGRESS</h3>
+                <div class="progress-bar-container">
+                    <div id="total-progress-bar" class="progress-bar" style="width: 0%"></div>
+                </div>
+                <p id="total-progress-percent">0% Completed</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-label">STREAK</span>
+                    <span id="streak-count" class="stat-value">0 DAYS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">REMAINING</span>
+                    <span id="remaining-days" class="stat-value">180 DAYS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">PROJECTS</span>
+                    <span id="projects-count" class="stat-value">0</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="filters" class="filters">
+            <input type="text" id="search-tasks" placeholder="Search tasks (e.g. PyTorch, SQL)...">
+            <select id="filter-focus">
+                <option value="all">All Focus Areas</option>
+                <option value="Python & SQL">Python & SQL</option>
+                <option value="Math & Data Foundations">Math & Data Foundations</option>
+                <option value="Data Manipulation (NumPy/Pandas)">Data Manipulation</option>
+                <option value="Deep Learning (PyTorch)">Deep Learning</option>
+                <option value="Big Data (PySpark)">Big Data</option>
+                <option value="Cloud & DevOps (Mlopps)">Cloud & DevOps</option>
+                <option value="Job Hunt & Interviews">Interview Prep</option>
+            </select>
+        </section>
+
+        <main id="roadmap-list" class="roadmap-list">
+            <!-- Tasks will be injected here by app.js -->
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
